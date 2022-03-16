@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#menit{
+    margin-bottom: 100px;
+}
+
+.garis{
+    width: 200px;
+    height: 10px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    /* transform: rotate(90deg); */
+}
+.garis::before{
+    content: '';
+    position: absolute;
+    padding: 2px;
+    margin: 0;
+    width: 50%;
+    height: 12px;
+    background-color: blue;
+}
